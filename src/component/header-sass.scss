@@ -1,0 +1,94 @@
+$myColor: #021D3A;
+// reset header
+#gh-main-cnt {
+  transition: padding 0.3s, height 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0s, 0s;
+  transition-property: padding, height;
+  height: 80px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.u-flex-center-ver {
+  display: flex;
+  align-items: center;
+}
+
+.u-position-relative {
+  position: relative;
+}
+
+.u-padding-l-hor-from-xl {
+  @media only screen and (min-width: 75em) {
+    padding-right: 32px !important;
+    padding-left: 32px !important;
+  }
+}
+
+// button login and register
+#gh-main-cnt .gh-profile-container {
+    flex-shrink: 0;
+    display: flex;
+}
+
+#gh-signin-btn, #gh-cta-btn, #gh-myaccount-btn, #gh-institutionalsignin-btn {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.link-button-secondary:not(.on-dark-background) {
+    background-color: #fff;
+    border-color: $myColor;
+    color: $myColor;
+}
+
+.u-margin-s-right {
+    margin-right: 16px!important;
+}
+
+.link-button{
+    @media only screen and (min-width: 36em){
+        max-width: 100%;
+    }
+}
+
+.link-button {
+    border: 2px solid;
+    display: inline-block;
+    font-family: inherit;
+    height: 40px;
+    font-size: 20px;
+    line-height: 36px;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: background-color .3s,border-color .3s,color .3s;
+    user-select: none;
+    white-space: nowrap;
+    max-width: 250px;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-button-primary:not(.on-dark-background) {
+    background-color: $myColor;
+    border-color: $myColor;
+    color: #fff;
+}
+
+.header-branding-book{
+    background-color: $myColor;
+    height: 220px;
+    width: 100%;
+}
+
+.dropdown-menu.show{
+    border-radius: 0px;
+    border: 1px solid #333;
+}
+
+.dropdown-toggle{
+    color: #000;
+}
